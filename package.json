@@ -1,0 +1,37 @@
+{
+  "description": "Node API for Klaviyo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Lucas Swartsenburg",
+    "email": "lucas@itso.io",
+    "url": "www.itso.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": "https://github.com/itsolucas/klaviyo-node",
+  "homepage": "https://github.com/itsolucas/klaviyo-node#readme",
+  "bugs": {
+    "url": "https://github.com/owner/project/issues",
+    "email": "project@hostname.com"
+  },
+  "keywords": [
+    "klaviyo",
+    "email",
+    "klaviyo.com",
+    "client"
+  ],
+  "files": [
+    "lib/index.js"
+  ],
+  "main": "lib/index.js",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "axios": "^0.19.0",
+    "axios-retry": "^3.1.2",
+    "lodash": "^4.17.11",
+    "winston": "^3.2.1",
+    "yarn": "^1.16.0"
+  }
+}
