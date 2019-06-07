@@ -1,7 +1,7 @@
 {
+  "name": "klaviyo-node",
   "description": "Node API for Klaviyo",
   "version": "1.0.0",
-  "license": "MIT",
   "author": {
     "name": "Lucas Swartsenburg",
     "email": "lucas@itso.io",
@@ -26,6 +26,13 @@
     "lib/index.js"
   ],
   "main": "lib/index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js --ext js lib",
+    "docs": "node ./node_modules/jsdoc/jsdoc.js lib/index.js && node ./node_modules/http-server/bin/http-server out",
+    "release": "yarn run np",
+    "test": "./node_modules/jest/bin/jest.js --coverage"
+  },
   "dependencies": {
     "assert": "^2.0.0",
     "axios": "^0.19.0",
@@ -33,5 +40,12 @@
     "lodash": "^4.17.11",
     "winston": "^3.2.1",
     "yarn": "^1.16.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
+    "http-server": "^0.11.1",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2"
   }
 }
