@@ -29,9 +29,10 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "node ./node_modules/eslint/bin/eslint.js --ext js lib",
-    "docs": "node ./node_modules/jsdoc/jsdoc.js lib/index.js && node ./node_modules/http-server/bin/http-server out",
+    "docs": "node ./node_modules/jsdoc-to-markdown/bin/cli.js --files lib/* > docs/readme.md",
     "release": "yarn run np",
-    "test": "./node_modules/jest/bin/jest.js --coverage"
+    "test": "./node_modules/jest/bin/jest.js --coverage",
+    "build": "npm run-script test && npm run-script lint && npm run-script docs"
   },
   "dependencies": {
     "assert": "^2.0.0",
@@ -46,6 +47,7 @@
     "eslint-config-google": "^0.13.0",
     "http-server": "^0.11.1",
     "jest": "^24.8.0",
-    "jsdoc": "^3.6.2"
+    "jsdoc": "^3.6.2",
+    "jsdoc-to-markdown": "^5.0.0"
   }
 }
