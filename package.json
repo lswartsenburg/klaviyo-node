@@ -1,7 +1,7 @@
 {
   "name": "klaviyo-node",
   "description": "Node API for Klaviyo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Lucas Swartsenburg",
     "email": "lucas@itso.io",

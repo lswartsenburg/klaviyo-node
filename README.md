@@ -51,6 +51,9 @@ You can then easily use Klaviyo to track events or identify people.  Note, track
 
 More details about the Klaviyo API can be found here: https://www.klaviyo.com/docs/http-api
 
+## Documentation
+The methods in the package are documented in the [docs](https://github.com/itso-io/klaviyo-node/tree/master/docs) folder of the repository. 
+
 ## Contributing
 Everyone is welcome to contribute to this package. Simply make sure there are no errors and your contribution passes the CircleCI test and we will review and hopefully merge your changes. 
 
