@@ -61,7 +61,7 @@ To make sure your package is ready for a Pull Request, please run `yarn build`. 
 ### Testing
 This package uses `jest` to run tests. You can easily run all the tests using `yarn test`.
 
-### Style Guide, 
+### Style Guide
 This package uses ESLint with the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html). Styling is strictly enforced and CircleCI will return an error when there are styling issues with your contribution. You can run the linter by executing `yarn lint`.
 
 ### Documentation
