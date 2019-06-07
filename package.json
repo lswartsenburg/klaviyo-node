@@ -29,9 +29,11 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "node ./node_modules/eslint/bin/eslint.js --ext js lib",
-    "docs": "node ./node_modules/jsdoc-to-markdown/bin/cli.js --files lib/* > docs/readme.md",
+    "jsdoc-to-markdown": "node ./node_modules/jsdoc-to-markdown/bin/cli.js --files lib/* > docs/README.md",
+    "docs": "npm run-script jsdoc-to-markdown && node ./node_modules/markdown-spellcheck/bin/mdspell -r --en-us \"docs/*.md\" \"README.md\"",
     "release": "yarn run np",
     "test": "./node_modules/jest/bin/jest.js --coverage",
+    "spelling": "node ./node_modules/markdown-spellcheck/bin/mdspell \"docs/*.md\" \"README.md\"",
     "build": "npm run-script test && npm run-script lint && npm run-script docs"
   },
   "dependencies": {
@@ -47,7 +49,7 @@
     "eslint-config-google": "^0.13.0",
     "http-server": "^0.11.1",
     "jest": "^24.8.0",
-    "jsdoc": "^3.6.2",
-    "jsdoc-to-markdown": "^5.0.0"
+    "jsdoc-to-markdown": "^5.0.0",
+    "markdown-spellcheck": "^1.3.1"
   }
 }
