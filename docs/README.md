@@ -24,7 +24,7 @@ here: https://www.klaviyo.com/docs/http-api
 | transport | <code>Winston.Transport</code> | (default: Console) - A       Winston Logger Transport object. When a Transport is passed, all       log messages will be forwarded to that transport instead of the       default Console output. |
 | log | <code>Boolean</code> | (default: true) - If true, this module       will output log messages using the defined or default Transport |
 | logLevel | <code>String</code> | (default: info) - Decide which level       log messages should be outputted for. |
-| apiBasePath | <code>String</code> | (default: https://a.klaviyo.com/api) -       the base URL to which to send the track and identify calls to. |
+| apiBasePath | <code>String</code> | (default: https://a.klaviyo.com/api) -       The base URL to which to send the track and identify calls to. |
 
 
 * [~Klaviyo](#module_klaviyo-node..Klaviyo)
