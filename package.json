@@ -33,7 +33,7 @@
     "docs": "npm run-script jsdoc-to-markdown && node ./node_modules/markdown-spellcheck/bin/mdspell -r --en-us \"docs/*.md\" \"README.md\"",
     "release": "yarn run np",
     "test": "./node_modules/jest/bin/jest.js --coverage",
-    "spelling": "node ./node_modules/markdown-spellcheck/bin/mdspell \"docs/*.md\" \"README.md\"",
+    "spelling": "node ./node_modules/markdown-spellcheck/bin/mdspell --en-us \"docs/*.md\" \"README.md\"",
     "build": "npm run-script test && npm run-script lint && npm run-script docs"
   },
   "dependencies": {

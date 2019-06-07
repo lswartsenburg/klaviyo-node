@@ -5,7 +5,14 @@
 # where filename is relative to this configuration file
 Node.js
 Klaviyo
- - docs/readme.md
+backend
+CircleCI
+ESLint
+linter
+JSDoc
+APIs
+CLI
+ - docs/README.md
 klaviyo-node
 klaviyo.track
 klaviyo.identify
