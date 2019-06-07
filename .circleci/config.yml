@@ -36,4 +36,8 @@ jobs:
       # run tests!
       - run: yarn test
 
+      # check styling
       - run: yarn run lint
+
+      # create docs
+      - run: yarn run docs
