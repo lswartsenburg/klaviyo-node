@@ -1,4 +1,4 @@
-# Klaviyo Node.js [![CircleCI](https://circleci.com/gh/itsolucas/klaviyo-node.svg?style=svg)](https://circleci.com/gh/itsolucas/klaviyo-node)
+# Klaviyo Node.js [![CircleCI](https://circleci.com/gh/itso-io/klaviyo-node.svg?style=svg)](https://circleci.com/gh/itso-io/klaviyo-node)
 A third party maintained Node.js package for sending Klaviyo events
 
 ## What is Klaviyo?
