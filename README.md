@@ -18,35 +18,35 @@ http://www.klaviyo.com/
 
 After installing the klaviyo package you can initiate it using your public token which is for track events or identifying profiles and/or your private API key to utilize the metrics and list APIs.
 
-    const Klaviyo = require('klaviyo-node')
+    const Klaviyo = require('klaviyo-node');
 
     client = new Klaviyo(PUBLIC_TOKEN);
 
 You can then easily use Klaviyo to track events or identify people.  Note, track and identify requests take your public token.
 
-    # Track an event...
+    // Track an event...
     client.track('Filled out profile', 'someone@mailinator.com', {
-        'Added social accounts' : False,
+      'Added social accounts': false,
     });
-    
-    # you can also add profile properties
+
+    // you can also add profile properties
     client.track(
-      'Filled out profile', 
-      'someone@mailinator.com', 
-      {
-        'Added social accounts' : False,
-      }, 
-      {
-        '$first_name': 'Thomas',
-        '$last_name': 'Jefferson'
-      }
+        'Filled out profile',
+        'someone@mailinator.com',
+        {
+          'Added social accounts': false,
+        },
+        {
+          '$first_name': 'Thomas',
+          '$last_name': 'Jefferson',
+        }
     );
 
-    # ...or just add a property to someone
-    client.identify('thomas.jefferson@mailinator.com', properties={
-        '$first_name': 'Thomas',
-        '$last_name': 'Jefferson',
-        'Plan' : 'Premium',
+    // ...or just add a property to someone
+    client.identify('thomas.jefferson@mailinator.com', {
+      '$first_name': 'Thomas',
+      '$last_name': 'Jefferson',
+      'Plan': 'Premium',
     });
 
 More details about the Klaviyo API can be found here: https://www.klaviyo.com/docs/http-api
