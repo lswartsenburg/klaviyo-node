@@ -5,8 +5,8 @@
 * [klaviyo-node](#module_klaviyo-node)
     * [~Klaviyo](#module_klaviyo-node..Klaviyo)
         * [new Klaviyo(publicKey, [options])](#new_module_klaviyo-node..Klaviyo_new)
-        * [.track(eventName, email, [eventProperties], [customerProperties])](#module_klaviyo-node..Klaviyo+track)
-        * [.identify(email, [customerProperties])](#module_klaviyo-node..Klaviyo+identify)
+        * [.track(eventName, email, [eventProperties], [customerProperties])](#module_klaviyo-node..Klaviyo+track) ⇒ <code>Promise</code>
+        * [.identify(email, [customerProperties])](#module_klaviyo-node..Klaviyo+identify) ⇒ <code>Promise</code>
 
 <a name="module_klaviyo-node..Klaviyo"></a>
 
@@ -29,8 +29,8 @@ here: https://www.klaviyo.com/docs/http-api
 
 * [~Klaviyo](#module_klaviyo-node..Klaviyo)
     * [new Klaviyo(publicKey, [options])](#new_module_klaviyo-node..Klaviyo_new)
-    * [.track(eventName, email, [eventProperties], [customerProperties])](#module_klaviyo-node..Klaviyo+track)
-    * [.identify(email, [customerProperties])](#module_klaviyo-node..Klaviyo+identify)
+    * [.track(eventName, email, [eventProperties], [customerProperties])](#module_klaviyo-node..Klaviyo+track) ⇒ <code>Promise</code>
+    * [.identify(email, [customerProperties])](#module_klaviyo-node..Klaviyo+identify) ⇒ <code>Promise</code>
 
 <a name="new_module_klaviyo-node..Klaviyo_new"></a>
 
@@ -46,10 +46,12 @@ optional dictionary of `options`.
 
 <a name="module_klaviyo-node..Klaviyo+track"></a>
 
-#### klaviyo.track(eventName, email, [eventProperties], [customerProperties])
+#### klaviyo.track(eventName, email, [eventProperties], [customerProperties]) ⇒ <code>Promise</code>
 Used to track when someone takes an action or does something.
 
 **Kind**: instance method of [<code>Klaviyo</code>](#module_klaviyo-node..Klaviyo)  
+**Returns**: <code>Promise</code> - Returns a Promise with the result of the Klaviyo
+    request.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -60,11 +62,13 @@ Used to track when someone takes an action or does something.
 
 <a name="module_klaviyo-node..Klaviyo+identify"></a>
 
-#### klaviyo.identify(email, [customerProperties])
+#### klaviyo.identify(email, [customerProperties]) ⇒ <code>Promise</code>
 The identify method allows you to identify and set properties on
 an individual.
 
 **Kind**: instance method of [<code>Klaviyo</code>](#module_klaviyo-node..Klaviyo)  
+**Returns**: <code>Promise</code> - Returns a Promise with the result of the Klaviyo
+    request.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
