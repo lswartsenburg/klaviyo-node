@@ -25,25 +25,32 @@ After installing the klaviyo package you can initiate it using your public token
 You can then easily use Klaviyo to track events or identify people.  Note, track and identify requests take your public token.
 
     // Track an event...
-    client.track('Filled out profile', 'someone@mailinator.com', {
+    client.track('Filled out profile', { 
+      '$email': 'someone@mailinator.com',
+      // and/or id
+      // '$id': 'XXXXXXXXXXXX', 
+      }, {
       'Added social accounts': false,
     });
 
     // you can also add profile properties
     client.track(
         'Filled out profile',
-        'someone@mailinator.com',
         {
-          'Added social accounts': false,
+          '$email': someone@mailinator.com',
+          '$first_name': 'Thomas',
+          '$last_name': 'Jefferson'
+          ....
         },
         {
-          '$first_name': 'Thomas',
-          '$last_name': 'Jefferson',
+          'Added social accounts': false,
         }
     );
 
     // ...or just add a property to someone
-    client.identify('thomas.jefferson@mailinator.com', {
+    client.identify({
+      '$email': 'thomas.jefferson@mailinator.com',
+      '$id': 'XXXXXXXXXXXX', 
       '$first_name': 'Thomas',
       '$last_name': 'Jefferson',
       'Plan': 'Premium',

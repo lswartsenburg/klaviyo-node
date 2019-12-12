@@ -56,7 +56,7 @@ Used to track when someone takes an action or does something.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | eventName | <code>String</code> |  | The type of Klaviyo request (track/identify) |
-| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information     including email or id identifier about the person     who did this event. |
+| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information     including $email or $id identifier about the person     who did this event. |
 | [eventProperties] | <code>Object</code> | <code>{}</code> | Custom information about the person who did this event. |
 
 <a name="module_klaviyo-node..Klaviyo+identify"></a>
@@ -71,5 +71,5 @@ an individual.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information     including email or id identifier about the person     who did this event. |
+| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information     including $email or $id identifier about the person     who did this event. |
 
