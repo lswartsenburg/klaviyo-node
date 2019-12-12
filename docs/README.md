@@ -5,8 +5,8 @@
 * [klaviyo-node](#module_klaviyo-node)
     * [~Klaviyo](#module_klaviyo-node..Klaviyo)
         * [new Klaviyo(publicKey, [options])](#new_module_klaviyo-node..Klaviyo_new)
-        * [.track(eventName, email, [eventProperties], [customerProperties])](#module_klaviyo-node..Klaviyo+track) ⇒ <code>Promise</code>
-        * [.identify(email, [customerProperties])](#module_klaviyo-node..Klaviyo+identify) ⇒ <code>Promise</code>
+        * [.track(eventName, [customerProperties], [eventProperties])](#module_klaviyo-node..Klaviyo+track) ⇒ <code>Promise</code>
+        * [.identify([customerProperties])](#module_klaviyo-node..Klaviyo+identify) ⇒ <code>Promise</code>
 
 <a name="module_klaviyo-node..Klaviyo"></a>
 
@@ -29,8 +29,8 @@ here: https://www.klaviyo.com/docs/http-api
 
 * [~Klaviyo](#module_klaviyo-node..Klaviyo)
     * [new Klaviyo(publicKey, [options])](#new_module_klaviyo-node..Klaviyo_new)
-    * [.track(eventName, email, [eventProperties], [customerProperties])](#module_klaviyo-node..Klaviyo+track) ⇒ <code>Promise</code>
-    * [.identify(email, [customerProperties])](#module_klaviyo-node..Klaviyo+identify) ⇒ <code>Promise</code>
+    * [.track(eventName, [customerProperties], [eventProperties])](#module_klaviyo-node..Klaviyo+track) ⇒ <code>Promise</code>
+    * [.identify([customerProperties])](#module_klaviyo-node..Klaviyo+identify) ⇒ <code>Promise</code>
 
 <a name="new_module_klaviyo-node..Klaviyo_new"></a>
 
@@ -46,7 +46,7 @@ optional dictionary of `options`.
 
 <a name="module_klaviyo-node..Klaviyo+track"></a>
 
-#### klaviyo.track(eventName, email, [eventProperties], [customerProperties]) ⇒ <code>Promise</code>
+#### klaviyo.track(eventName, [customerProperties], [eventProperties]) ⇒ <code>Promise</code>
 Used to track when someone takes an action or does something.
 
 **Kind**: instance method of [<code>Klaviyo</code>](#module_klaviyo-node..Klaviyo)  
@@ -56,13 +56,12 @@ Used to track when someone takes an action or does something.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | eventName | <code>String</code> |  | The type of Klaviyo request (track/identify) |
-| email | <code>String</code> |  | The email that acts as a unique identified     for this user |
+| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information     including email or id identifier about the person     who did this event. |
 | [eventProperties] | <code>Object</code> | <code>{}</code> | Custom information about the person who did this event. |
-| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information about this     event. |
 
 <a name="module_klaviyo-node..Klaviyo+identify"></a>
 
-#### klaviyo.identify(email, [customerProperties]) ⇒ <code>Promise</code>
+#### klaviyo.identify([customerProperties]) ⇒ <code>Promise</code>
 The identify method allows you to identify and set properties on
 an individual.
 
@@ -72,6 +71,5 @@ an individual.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| email | <code>String</code> |  | The email that acts as a unique identified     for this user |
-| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information about     the person who did this event. |
+| [customerProperties] | <code>Object</code> | <code>{}</code> | Custom information     including email or id identifier about the person     who did this event. |
 
