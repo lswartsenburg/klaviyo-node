@@ -12,6 +12,8 @@ linter
 JSDoc
 APIs
 CLI
+privateKey
+listId
  - docs/README.md
 klaviyo-node
 klaviyo.track
@@ -24,4 +26,6 @@ Winston.Transport
 logLevel
 apiBasePath
 Param
+klaviyo.suppress
+klaviyo.subscribe
 publicKey
